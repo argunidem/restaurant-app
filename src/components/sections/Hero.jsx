@@ -6,7 +6,7 @@ import FoodImage from '../../assets/images/FoodImage.webp';
 
 const HeroSection = () => {
   return (
-    <section>
+    <section id='hero'>
       <Container>
         <Row className={`${classes.row} mx-auto`}>
           <Col

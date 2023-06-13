@@ -3,6 +3,10 @@
   padding: 10px 5rem;
 }
 
+.navbar_brand {
+  cursor: pointer;
+}
+
 .navbar .toggle {
   border: none;
 }
@@ -25,8 +29,9 @@
   transition: 0.3s;
 }
 
-.navbar .firstnav__link {
-  color: var(--primaryitemcolor);
+.navbar .nav__link .active {
+  color: var(--primaryitemcolor) !important;
+  text-decoration: none;
 }
 
 .navbar .lastnav__link {

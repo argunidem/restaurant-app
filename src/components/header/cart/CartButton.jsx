@@ -1,18 +1,41 @@
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import classes from './CartButton.module.css';
 import CartContext from '../../store/CartContext';
 
 const CartButton = (props) => {
   const cartCtx = useContext(CartContext);
+  const [btnIsHighlighted, setBtnIsHighlighted] = useState(false);
 
-  const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
+  const { items } = cartCtx;
+
+  const numberOfCartItems = items.reduce((curNumber, item) => {
     return curNumber + item.amount;
-  }, 3);
+  }, 0);
+
+  const btnBump = `${classes.cart__button} ${
+    btnIsHighlighted ? classes.bump : ''
+  }`;
+
+  useEffect(() => {
+    if (items.length === 0) {
+      return;
+    }
+
+    setBtnIsHighlighted(true);
+
+    const bumpTimer = setTimeout(() => {
+      setBtnIsHighlighted(false);
+    }, 300);
+
+    return () => {
+      clearTimeout(bumpTimer);
+    };
+  }, [items]);
 
   return (
     <div
       onClick={props.onClick}
-      className={classes.cart__button}
+      className={btnBump}
     >
       <i className='bi bi-cart'></i>
       Cart

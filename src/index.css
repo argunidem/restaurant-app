@@ -16,6 +16,7 @@
   --tertiarytextcolor: #443d3d;
   --bordercolor: rgba(255, 77, 0, 0.6);
   --secondarybordercolor: #e1e1e1;
+  --tertiarybordercolor: #d9d9d9;
   --light: #ffffff;
   --dark: #000000;
   --textcolor: rgba(0, 0, 0, 0.81);
@@ -26,4 +27,19 @@ body {
   color: var(--primarytextcolor);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  background-color: #f1f1f1;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primaryitemcolor) !important;
+  border-radius: 10px !important;
+}
+
+::selection {
+  background-color: var(--primaryitemcolor);
+  color: var(--light);
 }
