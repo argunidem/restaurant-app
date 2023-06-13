@@ -8,7 +8,10 @@ const NavBar = () => {
   return (
     <Navbar
       expand='xl'
-      className={`${classes.navbar}`}
+      className={`${classes.navbar} fixed-top`}
+      data-aos='fade-down'
+      data-aos-easing='ease-out'
+      data-aos-duration='2000'
     >
       <Navbar.Brand href='#home'>
         {/* <img
