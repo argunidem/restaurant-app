@@ -14,10 +14,7 @@ const NavBar = () => {
       data-aos-duration='2000'
     >
       <Navbar.Brand href='#home'>
-        {/* <img
-          src={Logo}
-          alt='My logo'
-        ></img> */}
+        {/* <img src={Logo} alt="My logo"></img> */}
         <h1>Logo</h1>
       </Navbar.Brand>
       <Navbar.Toggle

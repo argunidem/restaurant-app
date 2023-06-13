@@ -1,7 +1,6 @@
-import { Row, Col, Container } from 'react-bootstrap';
+import { Row, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import classes from './HeroFour.module.css';
-import Button from '../ui/Button';
 
 const HeroFour = () => {
   return (

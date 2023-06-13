@@ -1,13 +1,98 @@
 import { Row, Col, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import classes from './HeroThree.module.css';
-import Input from '../ui/Input';
-import Button from '../ui/Button';
 import dish1 from '../../assets/images/dish1.png';
 import dish2 from '../../assets/images/dish2.png';
 import dish3 from '../../assets/images/dish3.png';
+import dish4 from '../../assets/images/dish4.png';
+import dish5 from '../../assets/images/dish5.png';
+import dish6 from '../../assets/images/dish6.png';
+
+import HeroThreeContent from './HeroThreeContent';
+
+const dummyList = [
+  {
+    id: 'd1',
+    src: dish1,
+    name: 'Yam and egg sauce',
+    price: '1500',
+  },
+
+  {
+    id: 'd2',
+    src: dish2,
+    name: 'Jellof rice and chicken',
+    price: ' 3500',
+  },
+
+  {
+    id: 'd3',
+    src: dish3,
+    name: 'Porridge beans',
+    price: '2000',
+  },
+];
+
+const dummyList2 = [
+  {
+    id: 'd4',
+    src: dish4,
+    name: 'Semo and egusi soup',
+    price: '5000',
+  },
+
+  {
+    id: 'd5',
+    src: dish5,
+    name: 'Amala and ewedu soup',
+    price: '7000',
+  },
+
+  {
+    id: 'd6',
+    src: dish6,
+    name: 'Eba and okra soup',
+    price: '3000',
+  },
+];
 
 const HeroThree = () => {
+  const dishList1 = dummyList.map((dish, index) => (
+    <Col
+      key={index}
+      lg={4}
+      className={classes.dish_col}
+      data-aos='fade-up'
+      data-aos-easing='ease-out'
+      data-aos-duration='700'
+    >
+      <HeroThreeContent
+        key={dish.id}
+        name={dish.name}
+        src={dish.src}
+        price={dish.price}
+      />
+    </Col>
+  ));
+
+  const dishList2 = dummyList2.map((dish, index) => (
+    <Col
+      key={index}
+      lg={4}
+      className={classes.dish_col}
+      data-aos='fade-up'
+      data-aos-easing='ease-out'
+      data-aos-duration='700'
+    >
+      <HeroThreeContent
+        key={dish.id}
+        name={dish.name}
+        src={dish.src}
+        price={dish.price}
+      />
+    </Col>
+  ));
+
   return (
     <section>
       <Container>
@@ -24,166 +109,10 @@ const HeroThree = () => {
             </div>
           </Col>
         </Row>
-        <Row className={classes.row_dish}>
-          <Col
-            lg={4}
-            className={classes.dish_col}
-            data-aos='fade-up'
-            data-aos-easing='ease-out'
-            data-aos-duration='700'
-          >
-            <div className={classes.dish_content}>
-              <div className={classes.dish_image_div}>
-                <img
-                  src={dish1}
-                  alt='Dish'
-                />
-              </div>
-              <div className={classes.dish_text_div}>
-                <p>Yam and egg sauce</p>
-              </div>
-              <div className={classes.dish_price_div}>
-                <p className='my-auto'>₦1200</p>
-                <Input />
-                <Button>
-                  <i className='bi bi-plus'></i> Add
-                </Button>
-              </div>
-            </div>
-          </Col>
-          <Col
-            lg={4}
-            className={`${classes.dish_col} ${classes.dish_col_mid}`}
-            data-aos='fade-up'
-            data-aos-easing='ease-out'
-            data-aos-duration='700'
-          >
-            <div className={classes.dish_content}>
-              <div className={classes.dish_image_div}>
-                <img
-                  src={dish2}
-                  alt='Dish'
-                />
-              </div>
-              <div className={classes.dish_text_div}>
-                <p>Yam and egg sauce</p>
-              </div>
-              <div className={classes.dish_price_div}>
-                <p className='my-auto'>₦1200</p>
-                <Input />
-                <Button>
-                  <i className='bi bi-plus'></i> Add
-                </Button>
-              </div>
-            </div>
-          </Col>
-          <Col
-            lg={4}
-            className={classes.dish_col}
-            data-aos='fade-up'
-            data-aos-easing='ease-out'
-            data-aos-duration='700'
-          >
-            <div className={classes.dish_content}>
-              <div className={classes.dish_image_div}>
-                <img
-                  src={dish3}
-                  alt='Dish'
-                />
-              </div>
-              <div className={classes.dish_text_div}>
-                <p>Yam and egg sauce</p>
-              </div>
-              <div className={classes.dish_price_div}>
-                <p className='my-auto'>₦1200</p>
-                <Input />
-                <Button>
-                  <i className='bi bi-plus'></i> Add
-                </Button>
-              </div>
-            </div>
-          </Col>
-        </Row>
-        <Row>
-          <Col
-            lg={4}
-            className={classes.dish_col}
-            data-aos='fade-up'
-            data-aos-easing='ease-out'
-            data-aos-duration='700'
-          >
-            <div className={classes.dish_content}>
-              <div className={classes.dish_image_div}>
-                <img
-                  src={dish1}
-                  alt='Dish'
-                />
-              </div>
-              <div className={classes.dish_text_div}>
-                <p>Yam and egg sauce</p>
-              </div>
-              <div className={classes.dish_price_div}>
-                <p className='my-auto'>₦1200</p>
-                <Input />
-                <Button>
-                  <i className='bi bi-plus'></i> Add
-                </Button>
-              </div>
-            </div>
-          </Col>
-          <Col
-            lg={4}
-            className={`${classes.dish_col} ${classes.dish_col_mid}`}
-            data-aos='fade-up'
-            data-aos-easing='ease-out'
-            data-aos-duration='700'
-          >
-            <div className={classes.dish_content}>
-              <div className={classes.dish_image_div}>
-                <img
-                  src={dish2}
-                  alt='Dish'
-                />
-              </div>
-              <div className={classes.dish_text_div}>
-                <p>Yam and egg sauce</p>
-              </div>
-              <div className={classes.dish_price_div}>
-                <p className='my-auto'>₦1200</p>
-                <Input />
-                <Button>
-                  <i className='bi bi-plus'></i> Add
-                </Button>
-              </div>
-            </div>
-          </Col>
-          <Col
-            lg={4}
-            className={classes.dish_col}
-            data-aos='fade-up'
-            data-aos-easing='ease-out'
-            data-aos-duration='700'
-          >
-            <div className={classes.dish_content}>
-              <div className={classes.dish_image_div}>
-                <img
-                  src={dish3}
-                  alt='Dish'
-                />
-              </div>
-              <div className={classes.dish_text_div}>
-                <p>Yam and egg sauce</p>
-              </div>
-              <div className={classes.dish_price_div}>
-                <p className='my-auto'>₦1200</p>
-                <Input />
-                <Button>
-                  <i className='bi bi-plus'></i> Add
-                </Button>
-              </div>
-            </div>
-          </Col>
-        </Row>
+
+        <Row className={classes.row_dish}>{dishList1}</Row>
+
+        <Row>{dishList2}</Row>
       </Container>
     </section>
   );
