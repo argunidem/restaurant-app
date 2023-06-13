@@ -1,9 +1,9 @@
 import NavBar from './NavBar';
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header>
-      <NavBar />
+      <NavBar onShowCart={props.onShowCart} />
     </header>
   );
 };
