@@ -56,12 +56,11 @@ const HeroFour = () => {
               <div className={classes.text_div}>
                 <h2 className={classes.text_header}>About us</h2>
                 <p className={classes.text_content}>
-                  I make delicious healthy meals for busy people who want to
-                  enjoy home made food without the hassle of cooking. Why would
-                  you cook when you don't have to? The Hot Plate makes it easy
-                  to eat your favorite home cooked food anywhere you want. You
-                  deserve to eat great food, whether you're at home or on the
-                  go.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Error enim nulla doloremque repellat ducimus obcaecati ipsa
+                  nobis explicabo expedita dicta accusantium itaque dignissimos
+                  natus nihil ex, distinctio reiciendis unde deserunt, voluptate
+                  molestiae, laudantium magni recusandae.
                 </p>
                 <div className={classes.button_div}>
                   <Button onClick={aboutModal}>See more</Button>

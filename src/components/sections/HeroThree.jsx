@@ -15,21 +15,21 @@ const dummyListone = [
     id: 'd1',
     src: dish1,
     name: 'Yam and egg sauce',
-    price: 1500,
+    price: 15,
   },
 
   {
     id: 'd2',
     src: dish2,
     name: 'Jollof rice and chicken',
-    price: 3500,
+    price: 35,
   },
 
   {
     id: 'd3',
     src: dish3,
     name: 'Porridge beans',
-    price: 2000,
+    price: 20,
   },
 ];
 
@@ -38,21 +38,21 @@ const dummyListTwo = [
     id: 'd4',
     src: dish4,
     name: 'Semo and egusi soup',
-    price: 5000,
+    price: 50,
   },
 
   {
     id: 'd5',
     src: dish5,
     name: 'Amala and ewedu soup',
-    price: 7000,
+    price: 70,
   },
 
   {
     id: 'd6',
     src: dish6,
     name: 'Eba and okra soup',
-    price: 3000,
+    price: 30,
   },
 ];
 

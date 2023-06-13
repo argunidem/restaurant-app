@@ -71,7 +71,7 @@ const Form = (props) => {
         {!amountIsValid && (
           <p>Input is invalid, Pleae Input a amount between 1 and 5</p>
         )}
-      </form>{' '}
+      </form>
     </>
   );
 };

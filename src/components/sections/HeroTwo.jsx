@@ -17,7 +17,7 @@ const HeroTwo = () => {
         >
           <Col xs={12}>
             <div className={classes.header_div}>
-              <h2>Why choose us</h2>
+              <h2>Why Us</h2>
               <p>This is what makes our product different</p>
             </div>
           </Col>

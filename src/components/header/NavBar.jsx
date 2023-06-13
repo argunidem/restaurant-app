@@ -3,7 +3,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-scroll';
 import classes from './NavBar.module.css';
-// import Logo from '../../assets/Logo/Logo.svg';
+import Logo from '../../assets/logo/logo.png';
 
 const NavBar = (props) => {
   return (
@@ -23,8 +23,10 @@ const NavBar = (props) => {
             offset={-50}
             duration={500}
           >
-            {/* <img src={Logo} alt="My logo"></img> */}
-            <h1>Logo</h1>
+            <img
+              src={Logo}
+              alt='My logo'
+            />
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle

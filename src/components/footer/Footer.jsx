@@ -1,11 +1,11 @@
 import { Row, Col, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import classes from './Footer.module.css';
-// import Logo from '../../assets/Logo/Logo.svg';
+import Logo from '../../assets/logo/logo.png';
 import { Link } from 'react-scroll';
-import insta from '../../assets/icons/instagram.png';
-import twitter from '../../assets/icons/twitter.png';
-import fb from '../../assets/icons/facebook.png';
+import insta from '../../assets/icons/instagram.svg';
+import twitter from '../../assets/icons/twitter.svg';
+import fb from '../../assets/icons/facebook.svg';
 
 const Footer = () => {
   return (
@@ -22,18 +22,17 @@ const Footer = () => {
                   offset={-50}
                   duration={500}
                 >
-                  {/* <img
+                  <img
                     className={classes.navbar_brand}
                     src={Logo}
-                    alt="logo"
-                  ></img> */}
-                  <h1>Logo</h1>
+                    alt='logo'
+                  />
                 </Link>
               </div>
               <div className={classes.content_div}>
                 <p>
-                  Solution for easy and flexible getting meals for the
-                  household.You can trust us anywhere through this platform
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deserunt laudantium, tenetur incidunt illum ea quasi.
                 </p>
                 <p>
                   &copy;2023 Made with <i className='bi bi-heart-fill'></i>{' '}
@@ -64,27 +63,21 @@ const Footer = () => {
           <Col lg={3}>
             <div className={classes.social}>
               <h3>Social</h3>
-              <p>
-                <img
-                  src={insta}
-                  alt='instagram'
-                  className={classes.social_icon}
-                ></img>
-              </p>
-              <p>
-                <img
-                  src={twitter}
-                  alt='twitter'
-                  className={classes.social_icon}
-                ></img>
-              </p>
-              <p>
-                <img
-                  src={fb}
-                  alt='facebook'
-                  className={classes.social_icon}
-                ></img>
-              </p>
+              <img
+                src={insta}
+                alt='instagram'
+                className={classes.social_icon}
+              />
+              <img
+                src={twitter}
+                alt='twitter'
+                className={classes.social_icon}
+              />
+              <img
+                src={fb}
+                alt='facebook'
+                className={classes.social_icon}
+              />
             </div>
           </Col>
 
