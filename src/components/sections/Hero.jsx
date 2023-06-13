@@ -1,8 +1,9 @@
-import TheButton from '../ui/Button';
 import classes from './Hero.module.css';
 import { Row, Col, Container } from 'react-bootstrap';
+import { Link } from 'react-scroll';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import FoodImage from '../../assets/images/FoodImage.webp';
+import Button from '../ui/Button';
 
 const HeroSection = () => {
   return (
@@ -24,7 +25,16 @@ const HeroSection = () => {
                 Helping you enjoy comfortable and healthy food anywhere and
                 anytime on the go
               </p>
-              <TheButton>Order now</TheButton>
+              <Link
+                className={classes.order_button}
+                to='dishes'
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+              >
+                <Button>Order Now</Button>
+              </Link>
             </div>
           </Col>
           <Col

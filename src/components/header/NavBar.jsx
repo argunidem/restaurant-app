@@ -1,5 +1,4 @@
 import CartButton from './cart/CartButton';
-import Cart from './cart/Cart';
 import { Navbar, Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-scroll';
@@ -9,7 +8,6 @@ import classes from './NavBar.module.css';
 const NavBar = (props) => {
   return (
     <>
-      <Cart />
       <Navbar
         expand='xl'
         className={`${classes.navbar} fixed-top`}
@@ -32,7 +30,6 @@ const NavBar = (props) => {
         <Navbar.Toggle
           aria-controls='basic-navbar-nav'
           className={classes.toggle}
-          id='navbar-toggler'
         />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className={`${classes.nav__linkgroup} ms-auto`}>

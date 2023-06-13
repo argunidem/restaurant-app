@@ -62,17 +62,20 @@ const HeroThree = () => {
       key={index}
       lg={4}
       className={classes.dish_col}
-      data-aos='fade-up'
-      data-aos-easing='ease-out'
-      data-aos-duration='700'
     >
-      <HeroThreeContent
-        key={dish.id}
-        id={dish.id}
-        name={dish.name}
-        src={dish.src}
-        price={dish.price}
-      />
+      <div
+        data-aos='fade-up'
+        data-aos-easing='ease-out'
+        data-aos-duration='700'
+      >
+        <HeroThreeContent
+          key={dish.id}
+          id={dish.id}
+          name={dish.name}
+          src={dish.src}
+          price={dish.price}
+        />
+      </div>
     </Col>
   ));
 
@@ -81,17 +84,20 @@ const HeroThree = () => {
       key={index}
       lg={4}
       className={classes.dish_col}
-      data-aos='fade-up'
-      data-aos-easing='ease-out'
-      data-aos-duration='700'
     >
-      <HeroThreeContent
-        key={dish.id}
-        id={dish.id}
-        name={dish.name}
-        src={dish.src}
-        price={dish.price}
-      />
+      <div
+        data-aos='fade-up'
+        data-aos-easing='ease-out'
+        data-aos-duration='700'
+      >
+        <HeroThreeContent
+          key={dish.id}
+          id={dish.id}
+          name={dish.name}
+          src={dish.src}
+          price={dish.price}
+        />
+      </div>
     </Col>
   ));
 
@@ -100,11 +106,11 @@ const HeroThree = () => {
       <Container>
         <Row
           className={`${classes.row} mx-auto`}
-          bdata-aos='fade-up'
+          data-aos='fade-up'
           data-aos-easing='ease-out'
           data-aos-duration='700'
         >
-          <Col sm={12}>
+          <Col xs={12}>
             <div className={classes.header_div}>
               <h2>Our daily dishes</h2>
               <p>Check out recommended dishes of your choice</p>

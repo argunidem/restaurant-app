@@ -17,9 +17,15 @@
   --bordercolor: rgba(255, 77, 0, 0.6);
   --secondarybordercolor: #e1e1e1;
   --tertiarybordercolor: #d9d9d9;
+  --heartcolor: #e81224;
   --light: #ffffff;
   --dark: #000000;
   --textcolor: rgba(0, 0, 0, 0.81);
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 body {
@@ -27,6 +33,7 @@ body {
   color: var(--primarytextcolor);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
 }
 
 ::-webkit-scrollbar {

@@ -36,15 +36,16 @@ const Footer = () => {
                   household.You can trust us anywhere through this platform
                 </p>
                 <p>
-                  &copy;2022 Made with <i className='bi bi-heart-fill'></i>{' '}
+                  &copy;2023 Made with <i className='bi bi-heart-fill'></i>{' '}
                   by&nbsp;
-                  <Link
-                    to='https://github.com/argunidem'
+                  <a
+                    href='https://github.com/argunidem'
                     target='_blank'
+                    rel='noreferrer'
                     className={classes.github_link}
                   >
                     Argun Idem
-                  </Link>
+                  </a>
                 </p>
               </div>
             </div>

@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import Input from './ui/Input';
 import Button from './ui/Button';
-import Tooltip from '../ui/Tooltip';
+import Tooltip from './ui/Tooltip';
+import classes from './ui/Tooltip.module.css';
 
 const Form = (props) => {
   const inputRef = useRef();
@@ -30,23 +31,25 @@ const Form = (props) => {
     setShowTooltip(true);
   };
 
+  const tipShow = `${showTooltip ? classes.show : ''}`;
+
   useEffect(() => {
     if (showTooltip === false) {
       return;
     }
 
-    const bumpTimer = setTimeout(() => {
+    const toolTimer = setTimeout(() => {
       setShowTooltip(false);
-    }, 300);
+    }, 1000);
 
     return () => {
-      clearTimeout(bumpTimer);
+      clearTimeout(toolTimer);
     };
-  }, []);
+  }, [showTooltip]);
 
   return (
     <>
-      {showTooltip && <Tooltip />}
+      <Tooltip className={tipShow} />
       <form onSubmit={onSubmitHandler}>
         <Input
           ref={inputRef}
